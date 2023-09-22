@@ -1,0 +1,23 @@
+---
+layout: archive
+title: "Experiences"
+permalink: /experiences/
+author_profile: true
+---
+
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% for post in posts %}
+ 	{% if post.categories contains 'experiences' %}
+      {% include archive-single.html type=entries_layout %}
+	{% endif %}
+  {% endfor %}
+</div>
+
+{% include paginator.html %}
