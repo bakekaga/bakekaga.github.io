@@ -4,7 +4,7 @@ excerpt: "Investigated distributed methods for linear regression."
 categories:
   - experiences
 date: 2023-05-04
-end_date: 2023-08-12
+end_date: 2023-08-08
 type: Research
 venue: Houston, TX
 ---
