@@ -27,30 +27,16 @@ Skills
 [Experiences](../experiences)
 ======
 
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts %}
-{% endif %}
+{% for post in site.experiences reversed %}
+  {% include archive-single.html%}
+{% endfor %}
 
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% for post in posts %}
-    {% if post.categories contains 'experiences' %}
-      {% include archive-single.html type=entries_layout %}
-	{% endif %}
-  {% endfor %}
-</div>
-
-{% include paginator.html %}
-
-
-<!-- [Projects](../projects)
+[Projects](../projects)
 ======
 
-<ul>{% for post in site.projects reversed %}
-  {% include archive-single-cv.html%}
-{% endfor %}</ul> -->
+{% for post in site.projects reversed %}
+  {% include archive-single.html%}
+{% endfor %}
 
 <!-- [Publications](../publications)
 ======

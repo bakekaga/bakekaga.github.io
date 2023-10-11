@@ -26,7 +26,9 @@
 		{% endif %}
 		</h3>
 
+		{% if post.end_date %}
 		<p> <b>{{ post.type }}</b>, {{ post.date | default: "1900-01-01" | date: "%m/%Y" }}—{{ post.end_date | default: "Present" | date: "%m/%Y" }}, <i>{{post.venue}}</i></p>
+		{% endif %}
 
 		{% if post.excerpt %}
 		<p class="archive__item-excerpt" itemprop="description"> {{ post.excerpt }} </p>
