@@ -46,17 +46,63 @@ table {
 	margin-left: auto;
 	margin-right: auto;
 }
-  
-h1 {
-	text-align: center;
+
+hr {
+	opacity: 0.2;
+	/* margin: 0; */
 }
-  
+
 h1,
 h2,
 h3 {
 	line-height: 1.2;
+	margin-bottom: 0px;
 }
-  
+
+/* p {
+	margin-top: 0;
+} */
+
+.education-content {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 15px auto;
+	& .desc {
+		font-size: 18px;
+		/* font-weight: bolder;  */
+	}
+	& .break {
+		flex-basis: 100%;
+		height: 0;
+	}
+	& .degree {
+		font-style: italic; 
+		font-weight: lighter;
+	}
+	& .date-loc {
+		margin-left: auto;
+		font-weight: lighter;
+	}
+}
+
+.resume-content {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 15px auto;
+	& .desc {
+		font-size: 18px;
+		/* font-weight: bolder;  */
+	}
+	& .break {
+		flex-basis: 100%;
+		height: 0;
+	}
+	& .date-loc {
+		/* margin-left: auto; */
+		font-weight: lighter;
+	}
+}
+
 img {
 	width: 100%;
 	align-self: center;
