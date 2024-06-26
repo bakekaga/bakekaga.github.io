@@ -80,7 +80,7 @@ h3 {
 		font-weight: lighter;
 	}
 	& .date-loc {
-		margin-left: auto;
+		/* margin-left: auto; */
 		font-weight: lighter;
 	}
 }
@@ -100,6 +100,9 @@ h3 {
 	& .date-loc {
 		/* margin-left: auto; */
 		font-weight: lighter;
+	}
+	ul {
+		margin-bottom: 0px;
 	}
 }
 
